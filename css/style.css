@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    padding: 10px;
+    text-align: center;
+    background-color: #48c5ce;
+    color: white;
+
+}
+.title{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+main{
+  padding: 20px;  
+  background-image: url(../images/people.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.formContainer{
+    float: right;
+    max-width: 270px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    
+}
+.mb{
+    margin-bottom: 15px;
+}
+
+input, select{
+     width: 100%;
+     box-sizing: border-box;
+     padding: 10px;
+     border: none;
+     margin-bottom: 10px;
+}
+input[type="submit"]{
+    color: white;
+    background-color: #48c5ce;
+    font-weight: bold;
+}
+
+select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+footer{
+    background-color: #434343bb;
+    padding: 40px;
+    text-align: center;
+}
+.picture{
+    width: 160px;
+}
+.description{
+    display: inline-block;
+    text-align: left;
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+}
+.description p, .description h3{
+    margin-bottom: 20px;
+}
+.description h3{
+    font-size: 24px;
+}
+
+.finalBar{
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: white;
+    max-width: 550px;
+}
+
+.finalBar a{
+    color: #1d1d1dbb;
+    font-weight: 900;
+    text-decoration: none;
+    
+}
+
+@media screen and (max-width: 700px) {
+    main{
+        padding: 40px;  
+        background-image: url(../images/people.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    header{
+        padding: 10px;
+        text-align: center;
+        background-color: #48c5ce;
+        color: white;
+    
+    }
+    .title{
+        font-size: min(5.5vw, 30px);
+        text-transform: uppercase;
+    }
+
+    .formContainer{
+        float: none;
+        margin: auto;
+        max-width: 300px;
+        width: 80%;
+    }
+
+    .description{
+        margin: auto;
+        display: block;
+        text-align: justify;
+        color: white;
+        max-width: 400px;
+        width: 90%;
+        margin-top: 20px;
+    }
+    .description p, .description h3{
+        margin-bottom: 20px;
+    }
+    .description h3{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .finalBar{
+        margin: auto;
+        margin-top: 30px;
+        padding: 10px;
+        background-color: white;
+        max-width: 390px;
+    }
+}
